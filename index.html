@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <title>ANDRES EDUARDO GOMEZ SALVO</title>
   </head>
 
@@ -21,6 +22,7 @@
         </ul>
       </nav>
     </header>
+    
     <section class="perfil">
       <div class="perfil-contenedor">
         <div class="perfil-imagen">
@@ -44,77 +46,121 @@
         </div>
       </div>
     </section>
-    <section class="estudios">
-      <div class="estudios-titulo">
-        <h2>Estudios Realizados</h2>
-        <hr />
-      </div>
-      <div class="estudios-contenedor">
-        <div class="estudios-colegios">
-          <img src="xammar.jpg" alt="I.E.E. Luis Fabio Xammar Jurado" />
-          <div class="estudios-info">
-            <h5>I.E.E. Luis Fabio Xammar Jurado</h5>
-            <p>Primaria</p>
-            <p>2007 - 2012</p>
-          </div>
+
+    <!-- SECCIÓN ESTUDIOS MODIFICADA CON BULMA -->
+    <section class="section">
+      <div class="container">
+        <div class="has-text-centered">
+          <h2 class="title is-2 has-text-primary">Estudios Realizados</h2>
+          <hr class="has-background-primary" style="height: 2px; width: 100px; margin: 0 auto 2rem;">
         </div>
-        <div class="estudios-colegios">
-          <img src="xammar.jpg" alt="I.E.E. Luis Fabio Xammar Jurado" />
-          <div class="estudios-info">
-            <h5>I.E.E. Luis Fabio Xammar Jurado</h5>
-            <p>Secundaria</p>
-            <p>2013 - 2017</p>
+        
+        <div class="columns is-centered is-multiline">
+          <!-- Primaria -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="xammar.jpg" alt="I.E.E. Luis Fabio Xammar Jurado">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <h5 class="title is-5">I.E.E. Luis Fabio Xammar Jurado</h5>
+                <p class="subtitle is-6 has-text-primary">Primaria</p>
+                <p class="has-text-grey">2007 - 2012</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="estudios-colegios">
-          <img
-            src="faustino.jpg"
-            alt="Universidad Nacional José Faustino Sánchez Carrión"
-          />
-          <div class="estudios-info">
-            <h5>Universidad Nacional José Faustino Sánchez Carrión</h5>
-            <p>Superior</p>
-            <p>2021 - 2025</p>
+          
+          <!-- Secundaria -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="xammar.jpg" alt="I.E.E. Luis Fabio Xammar Jurado">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <h5 class="title is-5">I.E.E. Luis Fabio Xammar Jurado</h5>
+                <p class="subtitle is-6 has-text-primary">Secundaria</p>
+                <p class="has-text-grey">2013 - 2017</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="experiencia">
-      <div>
-        <div class="experiencia-titulo">
-          <h2>Experiencia Profesional</h2>
-          <hr />
-        </div>
-        <div class="experiencia-contenedor">
-          <div class="experiencia-card">
-            <h4>Desarrollador Web</h4>
-            <h5>Tech Solutions</h5>
-            <p>2019 - 2021</p>
-            <p>
-              Desarrollo de aplicaciones web modernas con HTML, CSS y JavaScript
-            </p>
-          </div>
-          <div class="experiencia-card">
-            <h4>Analista de Datos</h4>
-            <h5>Data Corp</h5>
-            <p>2022 - 2023</p>
-            <p>
-              Procesamiento y visualización de datos usando Python y Excel
-              Avanzado
-            </p>
-          </div>
-          <div class="experiencia-card">
-            <h4>Soporte Técnico</h4>
-            <h5>Tech Systems</h5>
-            <p>2024 - 2025</p>
-            <p>
-              Atención de incidencias técnicas, instalación de software y
-              mantenimiento de equipos
-            </p>
+          
+          <!-- Superior -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="faustino.jpg" alt="Universidad Nacional José Faustino Sánchez Carrión">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <h5 class="title is-5">Universidad Nacional José Faustino Sánchez Carrión</h5>
+                <p class="subtitle is-6 has-text-primary">Superior</p>
+                <p class="has-text-grey">2021 - 2025</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SECCIÓN EXPERIENCIA MODIFICADA CON BULMA -->
+    <section class="section">
+      <div class="container">
+        <div class="has-text-centered">
+          <h2 class="title is-2 has-text-primary">Experiencia Profesional</h2>
+          <hr class="has-background-primary" style="height: 2px; width: 100px; margin: 0 auto 2rem;">
+        </div>
+        
+        <div class="columns is-centered is-multiline">
+          <!-- Experiencia 1 -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-content" style="border-left: 5px solid #005f99;">
+                <h4 class="title is-4 has-text-primary">Desarrollador Web</h4>
+                <h5 class="subtitle is-5">Tech Solutions</h5>
+                <p class="has-text-grey">2019 - 2021</p>
+                <div class="content">
+                  <p>Desarrollo de aplicaciones web modernas con HTML, CSS y JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experiencia 2 -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-content" style="border-left: 5px solid #005f99;">
+                <h4 class="title is-4 has-text-primary">Analista de Datos</h4>
+                <h5 class="subtitle is-5">Data Corp</h5>
+                <p class="has-text-grey">2022 - 2023</p>
+                <div class="content">
+                  <p>Procesamiento y visualización de datos usando Python y Excel Avanzado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experiencia 3 -->
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="card">
+              <div class="card-content" style="border-left: 5px solid #005f99;">
+                <h4 class="title is-4 has-text-primary">Soporte Técnico</h4>
+                <h5 class="subtitle is-5">Tech Systems</h5>
+                <p class="has-text-grey">2024 - 2025</p>
+                <div class="content">
+                  <p>Atención de incidencias técnicas, instalación de software y mantenimiento de equipos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="skills">
       <div class="skills-titulo">
         <h2>Habilidades Técnicas</h2>
@@ -169,6 +215,7 @@
         </div>
       </div>
     </section>
+
     <section class="intereses">
       <div class="intereses-titulo">
         <h2>Intereses</h2>
@@ -184,6 +231,7 @@
         <div class="mis-intereses">🏋️ Gimnasio</div>
       </div>
     </section>
+
     <section class="contacto">
       <div class="contacto-titulo">
         <h2>Contacto</h2>
@@ -228,6 +276,7 @@
         </form>
       </div>
     </section>
+
     <footer>
       <p>
         UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN <br />
