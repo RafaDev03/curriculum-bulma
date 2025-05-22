@@ -3,47 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>ANDRES EDUARDO GOMEZ SALVO</title>
   </head>
 
   <body>
-    <header>
-      <p>906 213 755 // andres08gs@hotmail.com</p>
-      <nav>
-        <ul>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="#">Estudios</a></li>
-          <li><a href="#">Experiencias</a></li>
-          <li><a href="#">Habilidades Tecnicas</a></li>
-          <li><a href="#">Intereses</a></li>
-          <li><a href="#">Contáctenos</a></li>
-        </ul>
+    <header class="has-background-light">
+      <div class="has-text-centered py-2 has-background-white-ter">
+        <p class="is-size-6">
+          <span class="icon"><i class="fas fa-phone"></i></span>
+          906 213 755 &nbsp;&nbsp;
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          andres08gs@hotmail.com
+        </p>
+      </div>
+
+      <nav class="navbar is-info">
+        <div class="container">
+          <div class="navbar-menu is-active">
+            <div class="navbar-start">
+              <a class="navbar-item" href="#perfil">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span>Perfil</span>
+              </a>
+              <a class="navbar-item" href="#estudios">
+                <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                <span>Estudios</span>
+              </a>
+              <a class="navbar-item" href="#experiencia">
+                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                <span>Experiencias</span>
+              </a>
+              <a class="navbar-item" href="#skills">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                <span>Habilidades Técnicas</span>
+              </a>
+              <a class="navbar-item" href="#intereses">
+                <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                <span>Intereses</span>
+              </a>
+              <a class="navbar-item" href="#contacto">
+                <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                <span>Contáctenos</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <section class="perfil">
-      <div class="perfil-contenedor">
-        <div class="perfil-imagen">
-          <img src="yo.png" alt="Andrés Gómez Salvo" />
-        </div>
-        <div class="perfil-info">
-          <h2 class="perfil-nombre">Andrés Eduardo Gómez Salvo</h2>
-          <p class="perfil-descripcion">
-            Profesional altamente capacitado en el diseño, desarrollo,
-            implementación y gestión de soluciones tecnológicas orientadas al
-            procesamiento, almacenamiento y transmisión de la información. Poseo
-            una solida formación en ciencias de la computación, programación,
-            arquitectura de computadoras, base de datos, redes, inteligencia
-            artificial y ciberseguridad.<br />
-            Profesional capaz de integrar conocimientos técnicos con habilidades
-            analíticas y de gestión para resolver problemas complejos en
-            entornos organizacionales, apoyando la toma de decisiones a través
-            de sistemas informáticos eficientes, seguros y adaptables a los
-            constantes avances tecnológicos.
-          </p>
+
+    <section id="perfil" class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-one-third has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+              <img class="is-rounded" src="yo.png" alt="Andrés Gómez Salvo" />
+            </figure>
+          </div>
+          <div class="column">
+            <h2 class="title is-3">Andrés Eduardo Gómez Salvo</h2>
+            <p class="content is-size-5">
+              Profesional altamente capacitado en el diseño, desarrollo,
+              implementación y gestión de soluciones tecnológicas orientadas al
+              procesamiento, almacenamiento y transmisión de la información.
+              Poseo una sólida formación en ciencias de la computación,
+              programación, arquitectura de computadoras, bases de datos, redes,
+              inteligencia artificial y ciberseguridad.
+              <br /><br />
+              Profesional capaz de integrar conocimientos técnicos con
+              habilidades analíticas y de gestión para resolver problemas
+              complejos en entornos organizacionales, apoyando la toma de
+              decisiones a través de sistemas informáticos eficientes, seguros y
+              adaptables a los constantes avances tecnológicos.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="estudios">
       <div class="estudios-titulo">
         <h2>Estudios Realizados</h2>
@@ -228,15 +273,18 @@
         </form>
       </div>
     </section>
-    <footer>
-      <p>
-        UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN <br />
-        FACULTAD DE INGENIERÍA INDUSTRIAL, SISTEMAS E INFORMÁTICA<br />
-        ESCUELA PROFESIONAL DE INGENIERÍA INFORMÁTICA <br />
-        Asignatura: Desarrollo de Aplicaciones Web<br />
-        Ciclo: IX<br />
-        Docente: Ing. Ronald Flores Flores
-      </p>
+    <footer class="footer has-background-light">
+      <div class="content has-text-centered">
+        <p>
+          <strong>UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ CARRIÓN</strong
+          ><br />
+          FACULTAD DE INGENIERÍA INDUSTRIAL, SISTEMAS E INFORMÁTICA<br />
+          ESCUELA PROFESIONAL DE INGENIERÍA INFORMÁTICA<br />
+          Asignatura: <em>Desarrollo de Aplicaciones Web</em><br />
+          Ciclo: IX<br />
+          Docente: Ing. Ronald Flores Flores
+        </p>
+      </div>
     </footer>
   </body>
 </html>
